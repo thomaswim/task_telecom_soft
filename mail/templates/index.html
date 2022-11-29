@@ -1,6 +1,6 @@
 <div class="container right-panel-active">
 	<!-- Sign Up -->
-
+{% load static %}
 	
 	<style>
 	
@@ -26,7 +26,7 @@
 body {
 	align-items: center;
 	background-color: var(--white);
-	background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
+	background: url("https://lh3.googleusercontent.com/pw/AL9nZEXhas3zk5j8kLTZ-I9nppVyK1BNmtVDBZ933-koxIodTurrbx-RMa1zkpTBNlViXiO1x8Prn4hkvsfFoPB1kzuvxsVbx7U8EDBdxWGBx8kepe13P7ISF3i78-EhR67xV5PgRObacCcrxvLXB9OKEVMJ=w1670-h939-no?authuser=0");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -109,7 +109,7 @@ body {
 
 .overlay {
 	background-color: var(--lightblue);
-	background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
+	background: url("https://lh3.googleusercontent.com/pw/AL9nZEXhas3zk5j8kLTZ-I9nppVyK1BNmtVDBZ933-koxIodTurrbx-RMa1zkpTBNlViXiO1x8Prn4hkvsfFoPB1kzuvxsVbx7U8EDBdxWGBx8kepe13P7ISF3i78-EhR67xV5PgRObacCcrxvLXB9OKEVMJ=w1670-h939-no?authuser=0");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -222,7 +222,7 @@ body {
 	<div class="container__form container--signin">
 		<form action="/index/" method="post" class="form" id="form2">
 		{% csrf_token %}
-			<h2 class="form__title">Sign In</h2>
+			<h2 class="form__title">Send an message</h2>
 			<input type="text" placeholder="Sender" class="input" name="userA" />
 			<input type="text" placeholder="Receiver" class="input" name="userB" />
 			<input type="text" placeholder="Message" class="input" name="msg"/>
@@ -235,7 +235,7 @@ body {
 	<div class="container__overlay">
 		<div class="overlay">
 			<div class="overlay__panel overlay--left">
-				<button class="btn" id="signIn" onclick="location.href='./receive.html';">Receive</button>
+	
 			</div>
 		</div>
 	</div>
@@ -251,7 +251,7 @@ body {
 	<div class="container__form container--signin">
 		<form action="/index/" method="get" class="form" id="form2">
 		{% csrf_token %}
-			<h2 class="form__title">Sign In</h2>
+			<h2 class="form__title">Letter Box</h2>
 			<input type="text" placeholder="Receiver" class="input" name="userC" />
 			<input  class="btn" id="signUp" type="submit" value="Get message"></input>
 			
